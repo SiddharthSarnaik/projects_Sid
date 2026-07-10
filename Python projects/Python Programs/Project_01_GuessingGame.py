@@ -1,7 +1,13 @@
 import random
 import time
 number = random.randint(1, 10)
-guess = int (input("Enter your guess (1-10): "))
+name = input("Enter your name: ")
+time.sleep(1)
+print("Hmmm....")
+time.sleep(1)
+print("Hello", name, "Welcome to the guessing game!")
+time.sleep(1)  # Add a small delay for better user experience
+guess = int (input("Enter a number between 1 and 10 to guess a correct number: "))
 guess_count = 1
 
 while guess != number:
