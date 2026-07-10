@@ -8,14 +8,11 @@ while guess != number:
     guess_count += 1
     time.sleep(1)  # Add a small delay for better user experience
     print("thinking....")
-    time.sleep(2)
+    time.sleep(2)  # Add a small delay for better user experience
     if guess > number:
         guess = int(input(" wrong. your guess is too high. Enter your guess (1-10): "))
     else:
         guess = int(input(" wrong. your guess is too low. Enter your guess (1-10): "))
-    
-    
-    
 
 print("Congratulations! You guessed the number which is : ", number, ", it took you", guess_count, "tries.")
         
