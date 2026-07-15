@@ -21,7 +21,7 @@ while guess != number:
         guess = int(input(f" wrong. your guess is too low. Enter your guess greater than {guess}: "))
 
 if guess_count == 1:
-    print("Congratulations! You guessed the number correctly which is : ", number, ", it took you just one try")
+    print(f"Congratulations! You guessed the number correctly which is : {number}, it took you just one try")
 else:
-    print("Congratulations! You guessed the number correctly which is : ", number, ", it took you", guess_count, "tries.")
+    print(f"Congratulations! You guessed the number correctly which is : {number}, it took you {guess_count} tries.")
         
