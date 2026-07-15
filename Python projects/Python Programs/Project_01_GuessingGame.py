@@ -20,5 +20,8 @@ while guess != number:
     else:
         guess = int(input(f" wrong. your guess is too low. Enter your guess greater than {guess}: "))
 
-print("Congratulations! You guessed the number which is : ", number, ", it took you", guess_count, "tries.")
+if guess_count == 1:
+    print("Congratulations! You guessed the number correctly which is : ", number, ", it took you just one try")
+else:
+    print("Congratulations! You guessed the number correctly which is : ", number, ", it took you", guess_count, "tries.")
         
