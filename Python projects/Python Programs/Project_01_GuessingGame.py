@@ -16,9 +16,9 @@ while guess != number:
     print("thinking....")
     time.sleep(2)  # Add a small delay for better user experience
     if guess > number:
-        guess = int(input(" wrong. your guess is too high. Enter your guess (1-10): "))
+        guess = int(input(f" wrong. your guess is too high. Enter your guess less than {guess}: "))
     else:
-        guess = int(input(" wrong. your guess is too low. Enter your guess (1-10): "))
+        guess = int(input(f" wrong. your guess is too low. Enter your guess greater than {guess}: "))
 
 print("Congratulations! You guessed the number which is : ", number, ", it took you", guess_count, "tries.")
         
